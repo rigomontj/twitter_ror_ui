@@ -1,0 +1,8 @@
+<h1>Magic tweet</h1>
+
+
+<%= form_tag(index_path, method: "post") do %>
+  <%= label_tag(:tweet, "Tweet here:") %>
+  <%= text_field_tag(:tweet) %>
+  <%= submit_tag("Send") %>
+<% end %>
